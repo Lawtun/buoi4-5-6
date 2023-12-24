@@ -37,7 +37,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 							arr_receive[count]=receive;
 							if(arr_receive[count]>='0'&arr_receive[count]<='9')	temp = temp*10 + (arr_receive[count]-48);
 						
-					if(arr_receive[count] ==' '||arr_receive[count]=='p') {
+					if(arr_receive[count] ==' ') {
 							data[sophantu]=temp;
 							temp = 0 ;
 							sophantu++;
