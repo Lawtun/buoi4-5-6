@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp
+"buoi5\startup_stm32f411xe.o"
+"buoi5\main.o"
+"buoi5\gpio.o"
+"buoi5\tim.o"
+"buoi5\stm32f4xx_it.o"
+"buoi5\stm32f4xx_hal_msp.o"
+"buoi5\stm32f4xx_hal_tim.o"
+"buoi5\stm32f4xx_hal_tim_ex.o"
+"buoi5\stm32f4xx_hal_rcc.o"
+"buoi5\stm32f4xx_hal_rcc_ex.o"
+"buoi5\stm32f4xx_hal_flash.o"
+"buoi5\stm32f4xx_hal_flash_ex.o"
+"buoi5\stm32f4xx_hal_flash_ramfunc.o"
+"buoi5\stm32f4xx_hal_gpio.o"
+"buoi5\stm32f4xx_hal_dma_ex.o"
+"buoi5\stm32f4xx_hal_dma.o"
+"buoi5\stm32f4xx_hal_pwr.o"
+"buoi5\stm32f4xx_hal_pwr_ex.o"
+"buoi5\stm32f4xx_hal_cortex.o"
+"buoi5\stm32f4xx_hal.o"
+"buoi5\stm32f4xx_hal_exti.o"
+"buoi5\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "buoi5\buoi5.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "buoi5.map" -o buoi5\buoi5.axf
